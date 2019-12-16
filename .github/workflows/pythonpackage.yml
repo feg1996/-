@@ -1,0 +1,25 @@
+import random
+
+j=1
+
+while j<11:
+  aj=[]
+  i=1 k=1
+  while i<6:
+    b=random.randint(1,35)
+    if b not in aj:
+      aj.append(b)
+    else:
+      i-=1
+  c=random.randint(1,12)
+  aj.append(c)
+  while k<2:
+    d = random.randint(1,12)
+    
+    if d != aj[5]:
+      aj.append(d)
+    else:
+      k-=1
+    k+=1
+  print(aj)
+  j+=1
